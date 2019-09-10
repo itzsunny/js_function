@@ -38,12 +38,12 @@ function calculateSupply(age,amount){
 
 ```js
 // your code goes here
-function celsiusToFahrenheit() {
-  let celsiusTemp = celsius;
+function celsiusToFahrenheit(celsius) {
+  let celsiusTemp = (fahrenheit - 32) / 1.8;
     return `${celsius}C is ${farenheit}F`;
 }
-  function fahrenheitToCelsius() {
-    let farenheitTemp = farenheit;
+  function fahrenheitToCelsius(farenheit) {
+    let farenheitTemp = celsius * 1.8 + 32;
     return `${farenheit}C is ${celsius}F`;
   }
 ```
@@ -118,6 +118,7 @@ pow(-31, 2); // "The number below 1 is not allowed"
 
 ```js
 // your code goes here
+
 ```
 6. 🎖Write a program that asks the user for a number n using prompt and prints the sum of the numbers 1 to n
 
