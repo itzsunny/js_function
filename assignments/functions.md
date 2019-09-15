@@ -97,15 +97,18 @@ Is there any difference in the behavior of these two variants? If there is what 
 
 ```js
 // Your code goes here
-let x = +prompt("enter an integer");
-let n = +prompt("enter 2nd integer")
+
 function pow(x,n) {
+  var x = +prompt("enter an integer");
+  var n = +prompt("enter 2nd integer")
   if (n <= 1) {
-  return ("integers less then 1 is not allowed");
+  alert ("integers less then 1 is not allowed");
+  } else {
+    return x ** n ;
   }
-  return x ** n ;
 }
-alert(pow(x,n));
+pow()
+
  
 
 // After writing code uncomment to check the answer.
@@ -116,8 +119,25 @@ pow(-31, 2); // "The number below 1 is not allowed"
 
 6. 🎖Write a program that asks the user for a number n and gives them the possibility to choose between computing the sum and computing the product of 1,…,n. Return the result accordingly.
 
-```js
-// your code goes here
+function factorial(n) {
+    let input = 1;
+    for (var i = 1; i <= n; i++) {
+      input = i * input;
+    }
+    return input;
+  }
+  function chooseOperation() {
+    let num = prompt('Enter an integer.');
+    let operator = prompt('Enter one of following operator: sum or product');
+    switch (operator){
+      case "sum": 
+      return num*(num+1);
+      break;
+      case "product": 
+      return factorial (num);
+      break;
+    }
+  }
 
 ```
 6. 🎖Write a program that asks the user for a number n using prompt and prints the sum of the numbers 1 to n
